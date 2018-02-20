@@ -64,4 +64,5 @@ fi
 #copy
 while read R ; do
         sshpass -p $pass scp $file $username@$R:$target
+        echo "Copied $file at $R:$target"
 done < $servers
